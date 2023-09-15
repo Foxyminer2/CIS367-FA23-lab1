@@ -3,3 +3,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    position: relative;
+    z-index:1;
+    background-color: transparent;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+
+    width: 110%;
+    height: 10px;
+    background-color: hsl(51, 100%, 49%);
+    opacity: 0.3;
+    bottom: -2px;
+    left:-5%;
+    z-index: -1;
+    border-radius: 2px;
+
+}
+
+.btn_pink {
+    position: relative;
+    z-index:1;
+    background-color: transparent;
+}
+
+.btn_pink::after {
+    content: '';
+    position: absolute;
+
+    width: 110%;
+    height: 10px;
+    background-color: hsl(7, 99%, 70%);
+    opacity: 0.3;
+    bottom: -2px;
+    left:-5%;
+    z-index: -1;
+    border-radius: 2px;
+
+}
